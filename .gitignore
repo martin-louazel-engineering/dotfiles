@@ -3,6 +3,6 @@
 *
 
 !.gitignore
-!.bash_local
+!.bash_aliases
 !.tmux.conf
 !.vimrc
