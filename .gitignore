@@ -1,0 +1,8 @@
+# Ignore everything except the files I want
+# Since this will reside in the home directory\
+*
+
+!.gitignore
+!.bash_local
+!.tmux.conf
+!.vimrc
