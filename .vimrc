@@ -5,9 +5,7 @@ filetype plugin indent on
 colorscheme desert
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme='deus'
-" let g:airline_solarized_bg='dark'
-
+let g:airline_theme='angr'
 
 set number
 
