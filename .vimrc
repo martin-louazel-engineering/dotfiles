@@ -2,6 +2,7 @@ execute pathogen#infect()
 
 syntax on
 filetype plugin indent on
+set tabstop=4
 colorscheme desert
 
 let g:airline#extensions#tmuxline#enabled = 1
