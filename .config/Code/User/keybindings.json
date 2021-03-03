@@ -109,5 +109,67 @@
 	{
 		"key": "ctrl+k g",
 		"command": "extension.gitGrep"
+	},
+	{
+		"key": "alt+left",
+		"command": "workbench.action.focusLeftGroup"
+	},
+	{
+		"key": "ctrl+k ctrl+left",
+		"command": "-workbench.action.focusLeftGroup"
+	},
+	{
+		"key": "alt+down",
+		"command": "-notebook.cell.moveDown",
+		"when": "notebookEditorFocused && !inputFocus"
+	},
+	{
+		"key": "alt+up",
+		"command": "-notebook.cell.moveUp",
+		"when": "notebookEditorFocused && !inputFocus"
+	},
+	{
+		"key": "alt+right",
+		"command": "workbench.action.focusRightGroup"
+	},
+	{
+		"key": "ctrl+k ctrl+right",
+		"command": "-workbench.action.focusRightGroup"
+	},
+	{
+		"key": "alt+up",
+		"command": "-editor.action.moveLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+down",
+		"command": "-workbench.action.terminal.focusNextPane",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "alt+up",
+		"command": "-workbench.action.terminal.focusPreviousPane",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "alt+up",
+		"command": "workbench.action.focusAboveGroup"
+	},
+	{
+		"key": "ctrl+k ctrl+up",
+		"command": "-workbench.action.focusAboveGroup"
+	},
+	{
+		"key": "alt+down",
+		"command": "workbench.action.focusBelowGroup"
+	},
+	{
+		"key": "ctrl+k ctrl+down",
+		"command": "-workbench.action.focusBelowGroup"
+	},
+	{
+		"key": "alt+down",
+		"command": "-editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
 	}
 ]
