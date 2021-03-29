@@ -34,6 +34,8 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-\> <C-W>v
+set splitright
+set splitbelow
 
 " vim-cpp-enhanced-highlight
 let g:cpp_member_variable_highlight = 1
