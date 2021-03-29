@@ -8,6 +8,7 @@
 !.tmux.conf
 !.vimrc
 !/.vim/
+.netrwhist
 !dependencies
 
 !/.config/
