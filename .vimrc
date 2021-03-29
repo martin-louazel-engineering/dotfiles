@@ -18,12 +18,22 @@ set number
 " Copy on system clipboard
 set clipboard=unnamedplus
 
+" Personal tasks
 nnoremap <silent> <space>td :s/\[\s\]/\[x\]<CR>
 nnoremap <silent> <space>tu :s/\[x\]/\[ \]<CR>
 nnoremap <silent> <space>tc o[ ]<space>
 nnoremap <silent> <space>ts o<tab>[ ]<space>
+
+" Quick remove highlight
 nnoremap <silent> <space><space> :noh<CR>
 set hlsearch
+
+" Quicker split creation/navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-\> <C-W>v
 
 " vim-cpp-enhanced-highlight
 let g:cpp_member_variable_highlight = 1
