@@ -25,7 +25,10 @@ nnoremap <silent> <space>tu :s/\[x\]/\[ \]<CR>
 nnoremap <silent> <space>tc o[ ]<space>
 nnoremap <silent> <space>ts o<tab>[ ]<space>
 
-" Quick remove highlight
+" Search related
+set ignorecase
+set smartcase
+nnoremap <silent> * *``
 nnoremap <silent> <space><space> :noh<CR>
 set hlsearch
 
