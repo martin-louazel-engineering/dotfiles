@@ -44,6 +44,13 @@ set splitbelow
 " Tabs
 nnoremap <C-t> :tabnew<CR>
 
+" Faster file finding
+set wildmenu
+set wildmode=list:longest,full
+set wildignorecase
+nnoremap <space>e :tabnew **/
+nnoremap <space>f :find **/
+
 " vim-cpp-enhanced-highlight
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
