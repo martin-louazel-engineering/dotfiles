@@ -51,6 +51,12 @@ set wildignorecase
 nnoremap <space>e :tabnew **/
 nnoremap <space>f :find **/
 
+" Git grep
+command! -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | rightb cw | redraw!
+autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
+nnoremap <leader>g :Ggr 
+nnoremap <leader>p :vs\|Ggr <cword><CR>
+
 " vim-cpp-enhanced-highlight
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
