@@ -43,13 +43,15 @@ set splitbelow
 
 " Tabs
 nnoremap <C-t> :tabnew<CR>
+set switchbuf+=usetab
 
 " Faster file finding
 set wildmenu
 set wildmode=list:longest,full
 set wildignorecase
-nnoremap <space>e :tabnew **/
+nnoremap <space>e :tab drop **/
 nnoremap <space>f :find **/
+nnoremap <space>d :drop **/
 
 " Git grep
 command! -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | rightb cw | redraw!
