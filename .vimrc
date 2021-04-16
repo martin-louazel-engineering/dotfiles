@@ -46,6 +46,8 @@ set splitbelow
 " Tabs
 nnoremap <C-t> :tabnew<CR>
 set switchbuf+=usetab
+nnoremap <leader>t :tabs<CR>
+nnoremap <F5> :tabdo e<CR>
 
 " Faster file finding
 set wildmenu
