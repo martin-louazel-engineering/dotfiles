@@ -3,6 +3,8 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 set tabstop=4
+set softtabstop=0 noexpandtab
+set shiftwidth=4
 colorscheme desert
 hi Search ctermbg=Yellow
 hi Search ctermfg=Black
