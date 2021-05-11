@@ -83,6 +83,10 @@ nnoremap <leader>p :vs\|Ggr <cword><CR>
 map <leader>/ :s/^/\/\/ / <bar> noh<CR>
 map <leader>? :s/^\(\t\)\{-\}\/\/ /\1/ <bar> noh<CR>
  
+" folding
+set foldmethod=indent
+set foldlevelstart=99
+
 " vim-cpp-enhanced-highlight
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
