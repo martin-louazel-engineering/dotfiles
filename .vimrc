@@ -42,6 +42,22 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <C-\> <C-W>v
 set splitright
 set splitbelow
+function! MoveSeparator(PlusMinus, Vertical)
+	let num=tabpagewinnr(tabpagenr())
+	let pm=a:PlusMinus
+	if  num == "2"
+		let pm = pm == '+' ? '-' : '+'
+	end
+	if a:Vertical
+		exec "vertical resize " . pm . "5"
+	else
+		exec "resize " . pm . "5"
+	end
+endfunction
+nnoremap <silent> <C-S-Down> :call MoveSeparator("+", 0)<CR>
+nnoremap <silent> <C-S-Up> :call MoveSeparator("-", 0)<CR>
+nnoremap <silent> <C-S-Right> :call MoveSeparator("+", 1)<CR>
+nnoremap <silent> <C-S-Left> :call MoveSeparator("-", 1)<CR>
 
 " Tabs
 nnoremap <C-t> :tabnew<CR>
