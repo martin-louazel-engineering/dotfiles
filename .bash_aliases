@@ -1,7 +1,7 @@
 shopt -s expand_aliases
 
 # Aliases
-alias gittree='git log --graph --oneline --all --color=always --decorate | less -r'
+alias gittree='git log --graph --oneline --color=auto --decorate'
 alias please='sudo $(history -p !!)'
 
 #if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
