@@ -1,3 +1,5 @@
+shopt -s expand_aliases
+
 # Aliases
 alias gittree='git log --graph --oneline --all --color=always --decorate | less -r'
 alias please='sudo $(history -p !!)'
