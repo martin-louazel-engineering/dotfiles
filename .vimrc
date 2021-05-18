@@ -19,6 +19,13 @@ let g:airline_theme='angr'
 
 set number
 
+" File explorer
+let g:netrw_liststyle = 3
+let g:netrw_winsize = 25
+let g:netrw_browse_split = 3
+let g:netrw_banner = 0
+nnoremap <leader>e :Lex .<CR>
+
 " Copy on system clipboard
 set clipboard=unnamedplus
 
