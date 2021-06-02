@@ -26,6 +26,9 @@ let g:netrw_browse_split = 3
 let g:netrw_banner = 0
 nnoremap <leader>e :Lex .<CR>
 
+" Git tree
+nnoremap <leader>gt :new\|0read !gittree
+
 " Copy on system clipboard
 set clipboard=unnamedplus
 
@@ -84,7 +87,7 @@ nnoremap <space>d :drop **/
 " Git grep
 command! -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | rightb cw | redraw!
 autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
-nnoremap <leader>g :Ggr 
+nnoremap <leader>gg :Ggr 
 nnoremap <leader>p :vs\|Ggr <cword><CR>
 
 " Commenting
