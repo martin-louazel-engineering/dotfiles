@@ -87,10 +87,11 @@ nnoremap <silent> <C-S-Up> :call MoveSeparator("-", 0)<CR>
 nnoremap <silent> <C-S-Right> :call MoveSeparator("+", 1)<CR>
 nnoremap <silent> <C-S-Left> :call MoveSeparator("-", 1)<CR>
 
-" Tabs
+" Tabs & buffers
 nnoremap <C-t> :tabnew<CR>
 set switchbuf+=usetab
 nnoremap <leader>t :tabs<CR>
+nnoremap <leader>b :ls<CR>:b<space>
 nnoremap <F5> :tabdo e<CR>
 
 " Faster file finding
