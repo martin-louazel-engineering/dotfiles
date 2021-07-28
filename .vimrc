@@ -22,7 +22,6 @@ set number
 " File explorer
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
-let g:netrw_browse_split = 3
 let g:netrw_banner = 0
 let g:NetrwIsOpen=0
 
@@ -92,21 +91,21 @@ nnoremap <C-t> :tabnew<CR>
 set switchbuf+=usetab
 nnoremap <leader>t :tabs<CR>
 nnoremap <leader>b :ls<CR>:b<space>
-nnoremap <F5> :tabdo e<CR>
+nnoremap <F5> :bufdo e<CR>
 
 " Faster file finding
 set wildmenu
 set wildmode=list:longest,full
 set wildignorecase
 nnoremap <space>e :tab drop **/
-nnoremap <space>f :find **/
+nnoremap <space>f :e **/
 nnoremap <space>d :drop **/
 
 " Git grep
 command! -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | rightb cw | redraw!
 autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
 nnoremap <leader>gg :Ggr 
-nnoremap <leader>p :vs\|Ggr <cword><CR>
+nnoremap <leader>p :Ggr <cword><CR>
 
 " Commenting
 map <leader>/ :s/^/\/\/ / <bar> noh<CR>
@@ -116,6 +115,8 @@ map <leader>? :s/^\(\t\)\{-\}\/\/ /\1/ <bar> noh<CR>
 set foldmethod=indent
 set foldlevelstart=99
 
+" C++ related
+nnoremap <leader>m :vimgrep /\v^(\w+\*?\s+)?\w+::\w+\(.*\)/ % \| copen<CR>
 " vim-cpp-enhanced-highlight
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
