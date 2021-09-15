@@ -91,7 +91,7 @@ nnoremap <C-t> :tabnew<CR>
 set switchbuf+=usetab
 nnoremap <leader>t :tabs<CR>
 nnoremap <leader>b :ls<CR>:b<space>
-nnoremap <F5> :bufdo e<CR>
+nnoremap <F5> :source ~/.vimrc<CR>:bufdo e<CR>
 
 " Faster file finding
 set wildmenu
