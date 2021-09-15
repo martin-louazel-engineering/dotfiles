@@ -93,6 +93,8 @@ nnoremap <leader>t :tabs<CR>
 nnoremap <leader>b :ls<CR>:b<space>
 nnoremap <F5> :source ~/.vimrc<CR>:bufdo e<CR>
 nnoremap <leader>c :bufdo bd<CR>
+nnoremap <leader>p :bp<CR>
+nnoremap <leader>n :bn<CR>
 
 " Faster file finding
 set wildmenu
@@ -106,7 +108,7 @@ nnoremap <space>d :drop **/
 command! -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | rightb cw | redraw!
 autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
 nnoremap <leader>gg :Ggr 
-nnoremap <leader>p :Ggr <cword><CR>
+nnoremap <leader>[ :Ggr <cword><CR>
 
 " Commenting
 map <leader>/ :s/^/\/\/ / <bar> noh<CR>
