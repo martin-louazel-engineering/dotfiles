@@ -11,7 +11,7 @@ hi Search ctermfg=Black
 let $BASH_ENV = "~/.bash_aliases"
 set belloff=all
 
-let g:airline#extensions#tmuxline#enabled = 1
+let g:airline#extensions#tmuxline#enabled = 0
 let airline#extensions#tmuxline#snapshot_file = "~/.tmux-status.conf"
 
 let g:airline_powerline_fonts = 1
