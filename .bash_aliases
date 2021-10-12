@@ -13,3 +13,6 @@ bind '"\e[5~": menu-complete-backward'
 
 LOCATION='\[\033[01;34m\]`pwd | sed "s#$HOME#~#g"  | sed "s#\(/[^/]\{1,\}/[^/]\{1,\}/[^/]\{1,\}/\).*\(/[^/]\{1,\}/[^/]\{1,\}\)/\{0,1\}#\1_\2#g"`'
 PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:'$LOCATION'\[\033[00m\]\$ '
+
+bind 'set show-all-if-ambiguous on'
+bind 'set bell-style visible'

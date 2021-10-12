@@ -9,6 +9,7 @@ colorscheme desert
 hi Search ctermbg=Yellow
 hi Search ctermfg=Black
 let $BASH_ENV = "~/.bash_aliases"
+set belloff=all
 
 let g:airline#extensions#tmuxline#enabled = 1
 let airline#extensions#tmuxline#snapshot_file = "~/.tmux-status.conf"
