@@ -93,6 +93,7 @@ set switchbuf+=usetab
 nnoremap <leader>t :tabs<CR>
 nnoremap <leader>b :ls<CR>:b<space>
 nnoremap <F5> :source ~/.vimrc<CR>:bufdo e<CR>
+set noconfirm " disable confirmation dialog
 nnoremap <leader>c :bufdo bd<CR>
 nnoremap <leader>p :bp<CR>
 nnoremap <leader>n :bn<CR>
