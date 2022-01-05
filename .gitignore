@@ -10,3 +10,5 @@
 !/.vim/
 .vim/.netrwhist
 !dependencies
+!.zshrc
+!.p10k.zsh
