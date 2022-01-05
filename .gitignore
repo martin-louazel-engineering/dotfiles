@@ -10,11 +10,3 @@
 !/.vim/
 .vim/.netrwhist
 !dependencies
-
-!/.config/
-.config/*
-!/.config/Code/
-.config/Code/*
-!/.config/Code/User
-.config/Code/User/*
-!/.config/Code/User/keybindings.json
