@@ -9,6 +9,6 @@
 !.vimrc
 !/.vim/
 .vim/.netrwhist
-!dependencies
+!install.sh
 !.zshrc
 !.p10k.zsh
