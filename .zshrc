@@ -111,7 +111,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gittree='git log --graph --oneline --color=auto --decorate'
 alias please='sudo $(history -p !!)'
 alias ll='ls -alF'
 

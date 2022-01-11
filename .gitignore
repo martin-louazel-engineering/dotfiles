@@ -11,4 +11,5 @@
 .vim/.netrwhist
 !install.sh
 !.zshrc
+!.zshenv
 !.p10k.zsh
