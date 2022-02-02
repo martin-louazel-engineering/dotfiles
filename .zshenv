@@ -1,1 +1,1 @@
-alias gittree='git log --graph --oneline --color=auto --decorate'
+alias gt='git log --graph --oneline --color=auto --decorate'
