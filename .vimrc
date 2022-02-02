@@ -86,6 +86,16 @@ nnoremap <silent> <C-S-Down> :call MoveSeparator("+", 0)<CR>
 nnoremap <silent> <C-S-Up> :call MoveSeparator("-", 0)<CR>
 nnoremap <silent> <C-S-Right> :call MoveSeparator("+", 1)<CR>
 nnoremap <silent> <C-S-Left> :call MoveSeparator("-", 1)<CR>
+" Quick diff toggling
+nnoremap <silent> <Leader>df :call DiffToggle()<CR>
+
+function! DiffToggle()
+	if &diff
+		windo diffoff
+	else
+		windo diffthis
+	endif
+:endfunction
 
 " Tabs & buffers
 nnoremap <C-t> :tabnew<CR>
