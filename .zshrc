@@ -116,6 +116,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Personal
 alias please='sudo $(history -p !!)'
-alias ll='ls -alF'
+alias ll='ls -alhF'
 
 setopt no_share_history
