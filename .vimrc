@@ -151,3 +151,10 @@ vnoremap <silent> # :<C-U>
   \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
   \gVzv:call setreg('"', old_reg, old_regtype)<CR>
 vnoremap <leader>[ y:Ggr '<C-R>=escape(@",'/\')<CR>'<CR>
+
+" Git Gutter
+set updatetime=500
+highlight! link SignColumn LineNr
+highlight GitGutterAdd    ctermfg=2
+highlight GitGutterChange ctermfg=3
+highlight GitGutterDelete ctermfg=1
