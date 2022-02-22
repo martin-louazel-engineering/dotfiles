@@ -44,7 +44,7 @@ endfunction
 nnoremap <leader>e :call ToggleNetrw()<CR>
 
 " Git tree
-nnoremap <leader>gt :new\|0read !gittree
+nnoremap <leader>gt :new\|0read !gt
 
 " Copy on system clipboard
 set clipboard=unnamedplus
