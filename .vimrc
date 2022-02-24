@@ -91,6 +91,7 @@ nnoremap <silent> <space>ts o<tab>[ ]<space>
 " Search related
 set ignorecase
 set smartcase
+set incsearch
 nnoremap <silent> * *``
 nnoremap <silent> <space><space> :noh<CR>
 set hlsearch
