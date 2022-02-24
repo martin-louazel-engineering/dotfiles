@@ -2,9 +2,6 @@ execute pathogen#infect()
 
 syntax on
 filetype plugin indent on
-set tabstop=4
-set softtabstop=0 noexpandtab
-set shiftwidth=4
 colorscheme desert
 hi Search ctermbg=Yellow
 hi Search ctermfg=Black
@@ -19,6 +16,16 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='angr'
 
 set number
+
+" indentation
+set tabstop=4
+set softtabstop=0 noexpandtab
+set shiftwidth=4
+nnoremap <Tab> >>_
+nnoremap <S-Tab> <<_
+"inoremap <S-Tab> <C-D>
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
 
 " File explorer
 let g:netrw_liststyle = 3
