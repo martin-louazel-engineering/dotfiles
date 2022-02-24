@@ -9,6 +9,7 @@ hi VertSplit ctermfg=DarkGrey
 hi VertSplit ctermbg=White
 let $BASH_ENV = "~/.bash_aliases"
 set belloff=all
+set mouse=nv
 
 let g:airline#extensions#tmuxline#enabled = 0
 let airline#extensions#tmuxline#snapshot_file = "~/.tmux-status.conf"
