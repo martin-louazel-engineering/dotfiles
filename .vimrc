@@ -5,6 +5,8 @@ filetype plugin indent on
 colorscheme desert
 hi Search ctermbg=Yellow
 hi Search ctermfg=Black
+hi VertSplit ctermfg=DarkGrey
+hi VertSplit ctermbg=White
 let $BASH_ENV = "~/.bash_aliases"
 set belloff=all
 
