@@ -82,6 +82,7 @@ nnoremap <leader>gt :new\|0read !gt
 
 " Copy on system clipboard
 set clipboard=unnamedplus
+vmap <C-C> y
 
 " Personal tasks
 nnoremap <silent> <space>td :s/\[\s\]/\[x\]<CR>:noh<CR>
