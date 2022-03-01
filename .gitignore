@@ -8,7 +8,7 @@
 !.tmux.conf
 !.vimrc
 !/.vim/
-.vim/.netrwhist
+.vim/.netrw*
 !install.sh
 !.zshrc
 !.zshenv
