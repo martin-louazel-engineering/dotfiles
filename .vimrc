@@ -80,7 +80,7 @@ function! ToggleNetrw()
 		let g:NetrwIsOpen=0
 	else
 		let g:NetrwIsOpen=1
-		silent Lexplore
+		silent Lexplore %:p:h
 	endif
 endfunction
 nnoremap <leader>e :call ToggleNetrw()<CR>
