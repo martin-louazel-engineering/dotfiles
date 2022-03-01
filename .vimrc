@@ -170,7 +170,7 @@ nnoremap <leader>[ :Ggr <cword><CR>
 " Commenting
 map <leader>/ :s/^/\/\/ / <bar> noh<CR>
 map <leader>? :s/^\(\t\)\{-\}\/\/ /\1/ <bar> noh<CR>
- 
+
 " folding
 set foldmethod=indent
 set foldlevelstart=99
