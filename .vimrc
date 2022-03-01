@@ -21,6 +21,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='angr'
 
 set number
+set relativenumber
 
 " indentation
 set tabstop=4
