@@ -1,4 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
-let g:netrw_dirhist_2='/home/mlouazel/test/.git'
-let g:netrw_dirhist_1='/home/mlouazel/r/streamSDK/build/.build-yocto/buildhistory/images/stream810x44prime/glibc/yocto-nsdk-ip-image-swu'
