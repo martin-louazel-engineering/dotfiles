@@ -31,6 +31,9 @@ nnoremap <S-Tab> <<_
 "inoremap <S-Tab> <C-D>
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
+" highlight trailing spaces and spaces before a tab
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$\| \+\ze\t/
 
 " Intelligent tab completion
 inoremap <silent> <Tab> <C-r>=<SID>InsertTabWrapper(1)<CR>
