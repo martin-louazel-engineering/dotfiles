@@ -36,6 +36,10 @@ vnoremap <S-Tab> <gv
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$\| \+\ze\t/
 
+" line text object
+xnoremap il g_o^
+onoremap il :normal vil<CR>
+
 " Intelligent tab completion
 inoremap <silent> <Tab> <C-r>=<SID>InsertTabWrapper(1)<CR>
 inoremap <silent> <S-Tab> <C-r>=<SID>InsertTabWrapper(-1)<CR>
