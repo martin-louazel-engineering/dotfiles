@@ -94,10 +94,10 @@ set clipboard=unnamedplus
 vmap <C-C> y
 
 " Personal tasks
-nnoremap <silent> <space>td :s/\[\s\]/\[x\]<CR>:noh<CR>
-nnoremap <silent> <space>tu :s/\[x\]/\[ \]<CR>:noh<CR>
-nnoremap <silent> <space>tc o[ ]<space>
-nnoremap <silent> <space>ts o<tab>[ ]<space>
+nnoremap <silent> <leader>td :s/\[\s\]/\[x\]<CR>:noh<CR>
+nnoremap <silent> <leader>tu :s/\[x\]/\[ \]<CR>:noh<CR>
+nnoremap <silent> <leader>tc o[ ]<space>
+nnoremap <silent> <leader>ts o<tab>[ ]<space>
 
 " Search related
 set ignorecase
