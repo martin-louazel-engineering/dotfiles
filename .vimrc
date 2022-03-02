@@ -143,9 +143,7 @@ function! DiffToggle()
 :endfunction
 
 " Tabs & buffers
-nnoremap <C-t> :tabnew<CR>
 set switchbuf+=usetab
-nnoremap <leader>t :tabs<CR>
 nnoremap <leader>b :ls<CR>:b<space>
 nnoremap <F5> :source ~/.vimrc<CR>:bufdo e<CR>
 set noconfirm " disable confirmation dialog
