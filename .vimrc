@@ -75,6 +75,8 @@ function! <SID>InsertTabWrapper(direction)
     return "\<C-n>"
   endif
 endfunction
+" Avoid searching all files recusrively (because of path+=**
+set complete-=i
 
 " File explorer
 let g:netrw_liststyle = 3
