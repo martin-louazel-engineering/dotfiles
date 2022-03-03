@@ -207,7 +207,7 @@ vnoremap <leader>[ y:Ggr '<C-R>=escape(@",'/\')<CR>'<CR>
 " Git Gutter
 set updatetime=500
 highlight! link SignColumn LineNr
-highlight GitGutterAdd    ctermfg=2
-highlight GitGutterChange ctermfg=3
-highlight GitGutterDelete ctermfg=1
+highlight GitGutterAdd    ctermfg=2 ctermbg=none
+highlight GitGutterChange ctermfg=3 ctermbg=none
+highlight GitGutterDelete ctermfg=1 ctermbg=none
 set signcolumn=yes
