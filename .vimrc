@@ -138,10 +138,10 @@ function! MoveSeparator(PlusMinus, Vertical)
 		exec "resize " . pm . "5"
 	end
 endfunction
-nnoremap <silent> <C-S-Down> :call MoveSeparator("+", 0)<CR>
-nnoremap <silent> <C-S-Up> :call MoveSeparator("-", 0)<CR>
-nnoremap <silent> <C-S-Right> :call MoveSeparator("+", 1)<CR>
-nnoremap <silent> <C-S-Left> :call MoveSeparator("-", 1)<CR>
+nnoremap <silent> k :call MoveSeparator("+", 0)<CR>
+nnoremap <silent> j :call MoveSeparator("-", 0)<CR>
+nnoremap <silent> l :call MoveSeparator("+", 1)<CR>
+nnoremap <silent> h :call MoveSeparator("-", 1)<CR>
 " Quick diff toggling
 nnoremap <silent> <Leader>df :call DiffToggle()<CR>
 
