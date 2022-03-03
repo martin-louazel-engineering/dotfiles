@@ -115,7 +115,7 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Personal
-alias please='sudo $(history -p !!)'
+alias please='sudo !!'
 alias ll='ls -alhF'
 
 setopt no_share_history
