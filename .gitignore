@@ -7,8 +7,6 @@
 !.bash_aliases
 !.tmux.conf
 !.vimrc
-!/.vim/
-.vim/.netrw*
 !install.sh
 !.zshrc
 !.zshenv
