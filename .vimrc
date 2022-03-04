@@ -32,6 +32,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'junegunn/fzf'
 
 call vundle#end()
 
@@ -169,7 +170,7 @@ set wildmenu
 set wildmode=list:longest,full
 set wildignorecase
 nnoremap <space>e :tab drop **/
-nnoremap <space>f :e **/
+nnoremap <space>f :FZF<CR>
 nnoremap <space>d :drop **/
 
 " Git grep
