@@ -165,7 +165,6 @@ nnoremap <leader>p :bp<CR>
 nnoremap <leader>n :bn<CR>
 
 " Faster file finding
-set path+=**
 set wildmenu
 set wildmode=list:longest,full
 set wildignorecase
