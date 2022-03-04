@@ -134,10 +134,33 @@ function! MoveSeparator(PlusMinus, Vertical)
 	if  num == "2"
 		let pm = pm == '+' ? '-' : '+'
 	end
+	let affectTmux=0
 	if a:Vertical
 		exec "vertical resize " . pm . "5"
+		if winwidth(2) == 1
+			let affectTmux=1
+		end
 	else
 		exec "resize " . pm . "5"
+		if winheight(2) == 1
+			let affectTmux=1
+		end
+	end
+	if affectTmux
+		echo "should send command to Tmux"
+		if a:Vertical
+			if pm == '+'
+				silent exec "!tmux resize-pane -L 3"
+			else
+				silent exec "!tmux resize-pane -R 3"
+			end
+		else
+			if pm == '+'
+				silent exec "!tmux resize-pane -U 3"
+			else
+				silent exec "!tmux resize-pane -D 3"
+			end
+		end
 	end
 endfunction
 nnoremap <silent> h :call MoveSeparator("-", 1)<CR>
