@@ -32,6 +32,7 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'junegunn/fzf'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()
 
