@@ -30,7 +30,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'martin-louazel-engineering/vim-tmux-navigator'
 Plugin 'junegunn/fzf'
 Plugin 'tpope/vim-surround'
 
