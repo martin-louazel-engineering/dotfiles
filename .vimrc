@@ -163,10 +163,10 @@ function! MoveSeparator(PlusMinus, Vertical)
 		end
 	end
 endfunction
-nnoremap <silent> h :call MoveSeparator("-", 1)<CR>
-nnoremap <silent> j :call MoveSeparator("+", 0)<CR>
-nnoremap <silent> k :call MoveSeparator("-", 0)<CR>
-nnoremap <silent> l :call MoveSeparator("+", 1)<CR>
+"nnoremap <silent> h :call MoveSeparator("-", 1)<CR>
+"nnoremap <silent> j :call MoveSeparator("+", 0)<CR>
+"nnoremap <silent> k :call MoveSeparator("-", 0)<CR>
+"nnoremap <silent> l :call MoveSeparator("+", 1)<CR>
 " Quick diff toggling
 nnoremap <silent> <Leader>df :call DiffToggle()<CR>
 
