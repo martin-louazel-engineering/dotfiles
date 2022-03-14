@@ -118,4 +118,7 @@ source $ZSH/oh-my-zsh.sh
 alias please='sudo !!'
 alias ll='ls -alhF'
 
+bindkey "^[[P" history-beginning-search-backward
+bindkey "^[[N" history-beginning-search-forward
+
 setopt no_share_history
