@@ -104,7 +104,7 @@ endfunction
 nnoremap <leader>e :call ToggleNetrw()<CR>
 
 " Git tree
-nnoremap <leader>gt :Git! log --decorate --graph --oneline --all<CR><C-W>j
+nnoremap <leader>gt :Git! log --decorate --graph --oneline<CR><C-W>j
 
 " Copy on system clipboard
 set clipboard=unnamedplus
