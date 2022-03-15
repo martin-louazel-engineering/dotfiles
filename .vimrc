@@ -128,6 +128,7 @@ set hlsearch
 nnoremap <C-\> <C-W>v
 set splitright
 set splitbelow
+let g:tmux_navigator_resize_step=3
 " Quick diff toggling
 nnoremap <silent> <Leader>df :call DiffToggle()<CR>
 
