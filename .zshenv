@@ -1,1 +1,1 @@
-alias gt='git log --graph --oneline --color=auto --decorate'
+alias gt='vim -c "Git ++curwin --paginate log --graph --oneline --decorate"'
