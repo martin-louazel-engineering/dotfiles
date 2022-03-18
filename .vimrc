@@ -34,6 +34,9 @@ Plugin 'martin-louazel-engineering/vim-tmux-navigator'
 Plugin 'junegunn/fzf'
 Plugin 'tpope/vim-surround'
 
+Plugin 'pangloss/vim-javascript'
+Plugin 'leafgarland/typescript-vim'
+
 call vundle#end()
 
 set number
