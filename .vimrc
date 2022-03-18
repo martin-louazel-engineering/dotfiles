@@ -36,6 +36,7 @@ Plugin 'tpope/vim-surround'
 
 Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()
 
@@ -200,3 +201,15 @@ highlight GitGutterAdd    ctermfg=2 ctermbg=none
 highlight GitGutterChange ctermfg=3 ctermbg=none
 highlight GitGutterDelete ctermfg=1 ctermbg=none
 set signcolumn=yes
+
+" Eslint configuration
+let g:syntastic_javascript_checkers=['eslint']
+" Use project-specific version of eslint
+let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height = 5
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_wq = 0
