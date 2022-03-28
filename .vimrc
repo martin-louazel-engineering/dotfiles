@@ -198,10 +198,10 @@ vnoremap <leader>[ y:Ggr '<C-R>=escape(@",'/\')<CR>'<CR>
 
 " Git Gutter
 set updatetime=500
-highlight! link SignColumn LineNr
-highlight GitGutterAdd    ctermfg=2 ctermbg=none
-highlight GitGutterChange ctermfg=3 ctermbg=none
-highlight GitGutterDelete ctermfg=1 ctermbg=none
+autocmd vimenter * highlight! link SignColumn LineNr
+autocmd vimenter * highlight GitGutterAdd    ctermfg=2 ctermbg=None
+autocmd vimenter * highlight GitGutterChange ctermfg=3 ctermbg=None
+autocmd vimenter * highlight GitGutterDelete ctermfg=1 ctermbg=None
 set signcolumn=yes
 
 " Eslint configuration
