@@ -40,6 +40,9 @@ Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()
 
+autocmd vimenter * highlight Normal ctermbg=NONE
+autocmd vimenter * highlight EndOfBuffer ctermbg=NONE
+
 set number
 set relativenumber
 
