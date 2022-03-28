@@ -1,6 +1,5 @@
 syntax on
 filetype plugin indent on
-colorscheme desert
 hi VertSplit ctermfg=DarkGrey
 hi VertSplit ctermbg=White
 let $BASH_ENV = "~/.bash_aliases"
@@ -22,6 +21,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'sainnhe/sonokai'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
@@ -38,6 +38,7 @@ Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()
 
+colorscheme sonokai
 autocmd vimenter * highlight Normal ctermbg=NONE
 autocmd vimenter * highlight EndOfBuffer ctermbg=NONE
 
