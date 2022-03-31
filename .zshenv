@@ -1,2 +1,6 @@
-alias gti='vim -c "Git ++curwin --paginate log --graph --oneline --decorate"'
+alias gti='gittree'
 alias gt='git log --graph --oneline --decorate'
+
+gittree() {
+	vim -c "Git ++curwin --paginate log --oneline --graph --decorate $@"
+}
