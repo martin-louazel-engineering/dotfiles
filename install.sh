@@ -21,3 +21,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # Zsh - Autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+echo "Remap Caps Lock to Ctrl ? (y/n)"
+read answer
+if [ "$answer" = "y" ]; then
+	setxkbmap -option ctrl:nocaps
+fi
