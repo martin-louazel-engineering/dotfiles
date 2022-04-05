@@ -8,7 +8,10 @@ sudo apt install \
 	fonts-powerline \
 	zsh \
 	fzf \
-	ranger
+	ranger \
+	libx11-dev libxtst-dev python3-docopt python3-xlib python3-pil python3-attr
+
+pip install ueberzug
 
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
