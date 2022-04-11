@@ -114,6 +114,19 @@ nnoremap <leader>e :call ToggleNetrw()<CR>
 " Git tree
 nnoremap <leader>gc :Git checkout <cword>
 nnoremap <leader>gt :Git! log --decorate --graph --oneline<CR><C-W>j
+let g:gtColumn = 1
+function! GtSearch(increment)
+	if a:increment
+		let g:gtColumn += 2
+	else
+		let g:gtColumn -= 2
+	end
+	let @/ = "\\%" . g:gtColumn . "c[*|]"
+	normal n
+endfunction
+
+nnoremap ]g :call GtSearch(1)<CR>
+nnoremap [g :call GtSearch(0)<CR>
 
 " Copy on system clipboard
 set clipboard=unnamedplus
