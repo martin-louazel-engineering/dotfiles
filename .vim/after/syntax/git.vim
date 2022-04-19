@@ -5,7 +5,7 @@ syn match gitLgTag			/tag: [^,)]*/ contained containedin=gitLgRefs
 syn match gitLgRemote		/[^,()]*\/[^,)]*/ contained containedin=gitLgRefs
 syn match gitLgRefs			/([^)]*)/ contained containedin=gitLgHead
 syn match gitLgGraph		/^[_\*|\/\\ ]\+/ contained containedin=gitLgHead,gitLgCommit nextgroup=gitHashAbbrev skipwhite
-hi def link gitLgGraph		LineNr
+hi def link gitLgGraph		CursorLineNr
 hi def link gitLgRefs		gitReference
 hi def link gitLgHeadPtr	Type
 hi def link gitLgRemote		Keyword
