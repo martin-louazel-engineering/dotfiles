@@ -118,6 +118,7 @@ source $ZSH/oh-my-zsh.sh
 alias please='sudo !!'
 alias ll='ls -alhF'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias ff='find | grep'
 
 bindkey "^[[P" history-beginning-search-backward
 bindkey "^[[N" history-beginning-search-forward
