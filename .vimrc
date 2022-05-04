@@ -45,8 +45,6 @@ autocmd vimenter * highlight EndOfBuffer ctermbg=NONE
 set number
 set relativenumber
 
-set iskeyword+=-
-
 " ctags
 command! -nargs=* MakeTags !ctags -R <q-args>
 " indentation
