@@ -31,6 +31,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'martin-louazel-engineering/vim-tmux-navigator'
 Plugin 'junegunn/fzf'
 Plugin 'tpope/vim-surround'
+Plugin 'jpalardy/vim-slime'
 
 Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
@@ -278,3 +279,7 @@ function ToggleHex()
 endfunction
 command -bar Hexmode call ToggleHex()
 nnoremap <leader>hx :Hexmode<CR>
+
+"vim-slime configuration for tmux
+let g:slime_target = "tmux"
+let g:slime_paste_file = "$HOME/.slime_paste"
