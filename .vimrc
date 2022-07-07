@@ -61,6 +61,9 @@ vnoremap <S-Tab> <gv
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$\| \+\ze\t/
 
+" spare the shift keystroke in normal mode
+nnoremap ; :
+
 " line text object
 xnoremap il g_o^
 onoremap il :normal vil<CR>
