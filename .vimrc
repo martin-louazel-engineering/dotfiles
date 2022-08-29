@@ -152,8 +152,6 @@ nnoremap <silent> * *``
 nnoremap <silent> <space><space> :noh<CR>
 set hlsearch
 
-" Quicker split creation/navigation
-nnoremap <C-\> <C-W>v
 set splitright
 set splitbelow
 let g:tmux_navigator_resize_step=3
