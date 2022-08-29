@@ -186,7 +186,7 @@ nnoremap <space>d :drop **/
 " Git grep
 command! -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | rightb cw | redraw!
 autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
-nnoremap <leader>gg :Ggr 
+nnoremap <leader>gg :Ggr<space>
 nnoremap <leader>[ :Ggr <cword><CR>
 
 " Commenting
