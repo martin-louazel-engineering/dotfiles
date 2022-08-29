@@ -195,6 +195,7 @@ map <leader>? :s/^\(\t\)\{-\}\/\/ /\1/ <bar> noh<CR>
 
 " folding
 set foldmethod=indent
+" Avoid folding when opening a file
 set foldlevelstart=99
 
 " C++ related
