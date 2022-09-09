@@ -120,6 +120,7 @@ nnoremap <leader>gb :Git blame<CR>
 nnoremap <leader>gt :Git! log --decorate --graph --oneline<CR><C-W>j
 " Add hyphen to keywords to make it easier to <cword> branch names
 autocmd FileType git setlocal iskeyword+=-
+autocmd FileType git set nowrap
 
 let g:gtColumn = 1
 function! GtSearch(increment)
