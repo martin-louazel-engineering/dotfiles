@@ -6,7 +6,9 @@ let $BASH_ENV = "~/.bash_aliases"
 set belloff=all
 set formatoptions-=cro
 set mouse=nv
-set ttymouse=xterm2
+if !has('nvim')
+	set ttymouse=xterm2
+endif
 set scrolloff=2
 
 let g:airline#extensions#tmuxline#enabled = 0
