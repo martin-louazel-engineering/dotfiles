@@ -17,4 +17,5 @@
 !.ctags
 !.config/
 .config/*
+!.config/nvim/
 !.config/ranger/
