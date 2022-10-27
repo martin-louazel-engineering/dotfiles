@@ -184,9 +184,7 @@ nnoremap <leader>n :bn<CR>
 set wildmenu
 set wildmode=list:longest,full
 set wildignorecase
-nnoremap <space>e :tab drop **/
 nnoremap <space>f :FZF<CR>
-nnoremap <space>d :drop **/
 
 " Git grep
 command! -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | rightb cw | redraw!
