@@ -32,6 +32,7 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'martin-louazel-engineering/vim-tmux-navigator'
 Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'jpalardy/vim-slime'
 
@@ -187,10 +188,14 @@ set wildignorecase
 nnoremap <space>f :FZF<CR>
 
 " Git grep
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
+  \   fzf#vim#with_preview(), <bang>0)
 command! -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | rightb cw | redraw!
 autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
-nnoremap <leader>gg :Ggr<space>
-nnoremap <leader>[ :Ggr <cword><CR>
+nnoremap <leader>gg :Rg<CR>
+nnoremap <leader>[ :Rg <C-R><C-W><CR>
 
 " Commenting
 map <leader>/ :s/^/\/\/ / <bar> noh<CR>
