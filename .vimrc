@@ -161,6 +161,16 @@ set hlsearch
 set splitright
 set splitbelow
 let g:tmux_navigator_resize_step=3
+" Quick wrap toggle
+nnoremap <leader>tw :call WrapToggle()<CR>
+function! WrapToggle()
+	if &wrap
+		windo set nowrap
+	else
+		windo set wrap
+	endif
+:endfunction
+
 " Quick diff toggling
 nnoremap <silent> <Leader>df :call DiffToggle()<CR>
 
