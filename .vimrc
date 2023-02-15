@@ -39,6 +39,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'vim-syntastic/syntastic'
 
+Plugin 'solarnz/thrift.vim'
+
 call vundle#end()
 syntax on
 filetype plugin indent on
