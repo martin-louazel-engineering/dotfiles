@@ -1,5 +1,4 @@
-syntax on
-filetype plugin indent on
+filetype off
 hi VertSplit ctermfg=DarkGrey
 hi VertSplit ctermbg=White
 let $BASH_ENV = "~/.bash_aliases"
@@ -41,6 +40,8 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()
+syntax on
+filetype plugin indent on
 
 colorscheme sonokai
 autocmd vimenter * highlight Normal ctermbg=NONE
