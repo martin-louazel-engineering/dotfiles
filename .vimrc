@@ -307,6 +307,11 @@ endfunction
 command -bar Hexmode call ToggleHex()
 nnoremap <leader>hx :Hexmode<CR>
 
+command! -nargs=1 -complete=highlight Unmatch
+    \  for m in filter(getmatches(), { i, v -> l:v.group is? <q-args> })
+    \|     call matchdelete(m.id)
+    \| endfor
+
 "vim-slime configuration for tmux
 let g:slime_target = "tmux"
 let g:slime_paste_file = "$HOME/.slime_paste"
