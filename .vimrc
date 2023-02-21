@@ -40,7 +40,6 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'vim-syntastic/syntastic'
 
 Plugin 'solarnz/thrift.vim'
-Plugin 'kergoth/vim-bitbake'
 
 call vundle#end()
 syntax on
