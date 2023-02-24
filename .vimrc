@@ -310,6 +310,33 @@ command! -nargs=1 -complete=highlight Unmatch
     \  for m in filter(getmatches(), { i, v -> l:v.group is? <q-args> })
     \|     call matchdelete(m.id)
     \| endfor
+"WIP
+let g:disassemble_target = ""
+function! ListSymbols(openCmd)
+	if !exists("g:disassemble_target") || g:disassemble_target == ""
+		call DisassembleConfig()
+	endif
+	exe a:openCmd . " | r! nm " . g:disassemble_target
+	silent exe "file " . g:disassemble_target . " (nm)"
+	setlocal buftype=nofile
+	setlocal bufhidden=hide
+endfunction
+function! DisassembleConfig()
+	let g:disassemble_target = input("Path of exectuable file:", "", "file")
+endfunction
+function! DisassembleSymbol(openCmd, sym)
+	let l:symbol = expand(a:sym)
+	if !exists("g:disassemble_target") || g:disassemble_target == ""
+		call DisassembleConfig()
+	endif
+	exe a:openCmd . " | r! objdump --disassemble=" . l:symbol . " -M intel " . g:disassemble_target
+	silent exe "file " . l:symbol
+	setlocal buftype=nofile
+	setlocal bufhidden=hide
+	Unmatch ExtraWhitespace
+endfunction
+command -bang ListSym call ListSymbols("enew<bang> ")
+command -nargs=1 -bang DisamSym call DisassembleSymbol("enew<bang> ", <q-args>)
 
 "vim-slime configuration for tmux
 let g:slime_target = "tmux"
