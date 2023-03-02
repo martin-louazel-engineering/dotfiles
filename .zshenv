@@ -5,3 +5,4 @@ gittree() {
 	args="$*"
 	nvim -c "Git ++curwin --paginate log --oneline --graph --decorate $args"
 }
+. "$HOME/.cargo/env"
