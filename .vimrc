@@ -11,7 +11,7 @@ endif
 set scrolloff=2
 
 let g:airline#extensions#tmuxline#enabled = 0
-let airline#extensions#tmuxline#snapshot_file = "~/.tmux-status.conf"
+let g:airline#extensions#tmuxline#snapshot_file = "~/.tmux-status.conf"
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -48,6 +48,15 @@ filetype plugin indent on
 colorscheme sonokai
 autocmd vimenter * highlight Normal ctermbg=NONE
 autocmd vimenter * highlight EndOfBuffer ctermbg=NONE
+
+let g:tmuxline_preset = {
+      \'a'    : '#S',
+      \'win'  : '#I #W#F',
+      \'cwin' : '#I #W#F',
+      \'x'    : ['%a %d-%m-%Y', '%R'],
+      \'y'    : '#H #{tmux_mode_indicator}',
+	  \'options' : {'status-justify' : 'left'}
+	  \}
 
 set number
 set relativenumber
