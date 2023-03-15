@@ -274,7 +274,7 @@ nnoremap ]l :lnext<CR>
 nnoremap [l :lprev<CR>
 
 " Hex mode
-function ToggleHex()
+function! ToggleHex()
   " hex mode should be considered a read-only operation
   " save values for modified and read-only for restoration later,
   " and clear the read-only flag for now
@@ -312,7 +312,7 @@ function ToggleHex()
   let &readonly=l:oldreadonly
   let &modifiable=l:oldmodifiable
 endfunction
-command -bar Hexmode call ToggleHex()
+command! -bar Hexmode call ToggleHex()
 nnoremap <leader>hx :Hexmode<CR>
 
 command! -nargs=1 -complete=highlight Unmatch
