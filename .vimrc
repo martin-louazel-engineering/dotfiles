@@ -9,13 +9,6 @@ if !has('nvim')
 endif
 set scrolloff=2
 
-let g:airline#extensions#tmuxline#enabled = 0
-let g:airline#extensions#tmuxline#snapshot_file = "~/.tmux-status.conf"
-
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='angr'
-
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -49,15 +42,6 @@ filetype plugin indent on
 colorscheme sonokai
 autocmd vimenter * highlight Normal ctermbg=NONE
 autocmd vimenter * highlight EndOfBuffer ctermbg=NONE
-
-let g:tmuxline_preset = {
-      \'a'    : '#S',
-      \'win'  : '#I #W#F',
-      \'cwin' : '#I #W#F',
-      \'x'    : ['%a %d-%m-%Y', '%R'],
-      \'y'    : '#H #{tmux_mode_indicator}',
-	  \'options' : {'status-justify' : 'left'}
-	  \}
 
 set number
 set relativenumber
@@ -173,7 +157,6 @@ set hlsearch
 
 set splitright
 set splitbelow
-let g:tmux_navigator_resize_step=3
 " Quick wrap toggle
 nnoremap <leader>tw :call WrapToggle()<CR>
 function! WrapToggle()
@@ -232,9 +215,6 @@ set foldlevelstart=99
 " C++ related
 " Find all class members in cpp file and open in quickfix window
 autocmd FileType cpp nnoremap <leader>m :vimgrep /\v^(\w+\*?\s+)?\w+::\w+\(.*\)/ % \| copen<CR>
-" vim-cpp-enhanced-highlight
-let g:cpp_member_variable_highlight = 1
-let g:cpp_class_decl_highlight = 1
 
 " Visual Mode start searching
 vnoremap <silent> * :<C-U>
@@ -248,31 +228,6 @@ vnoremap <silent> # :<C-U>
   \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
   \gVzv:call setreg('"', old_reg, old_regtype)<CR>
 vnoremap <leader>[ y:Ggr '<C-R>=escape(@",'/\')<CR>'<CR>
-
-" Git Gutter
-set updatetime=500
-autocmd vimenter * highlight! link SignColumn LineNr
-autocmd vimenter * highlight GitGutterAdd    ctermfg=2 ctermbg=None
-autocmd vimenter * highlight GitGutterChange ctermfg=3 ctermbg=None
-autocmd vimenter * highlight GitGutterDelete ctermfg=1 ctermbg=None
-set signcolumn=yes
-
-" Eslint configuration
-let g:syntastic_javascript_checkers=['eslint']
-" Use project-specific version of eslint
-let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height = 5
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_python_checkers=['python']
-let g:syntastic_python_python_quiet_messages={'!level':'errors'}
-nnoremap ]l :lnext<CR>
-nnoremap [l :lprev<CR>
 
 " Hex mode
 function! ToggleHex()
@@ -320,7 +275,3 @@ command! -nargs=1 -complete=highlight Unmatch
     \  for m in filter(getmatches(), { i, v -> l:v.group is? <q-args> })
     \|     call matchdelete(m.id)
     \| endfor
-
-"vim-slime configuration for tmux
-let g:slime_target = "tmux"
-let g:slime_paste_file = "$HOME/.slime_paste"
