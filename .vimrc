@@ -129,8 +129,8 @@ endfunction
 nnoremap <leader>e :call ToggleNetrw()<CR>
 
 " Git tree
-nnoremap <leader>gc :Git checkout <cword><CR>
-nnoremap <leader>gp :Git cherry-pick <cword><CR>
+autocmd FileType git nnoremap <leader>gc :Git checkout <cword><CR>
+autocmd FileType git nnoremap <leader>gp :Git cherry-pick <cword><CR>
 nnoremap <leader>gb :Git blame<CR>
 command! -nargs=* -complete=customlist,fugitive#Complete GT Git ++curwin --paginate log --decorate --graph --oneline <args>
 nnoremap <leader>gt :GT <cword><CR>
