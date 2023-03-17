@@ -1,4 +1,3 @@
-filetype off
 hi VertSplit ctermfg=DarkGrey
 hi VertSplit ctermbg=White
 let $BASH_ENV = "~/.bash_aliases"
@@ -17,31 +16,33 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='angr'
 
-" Plugins
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+call plug#begin()
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'sainnhe/sonokai'
-Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'tpope/vim-fugitive'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'edkolev/tmuxline.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'martin-louazel-engineering/vim-tmux-navigator'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-Plugin 'tpope/vim-surround'
-Plugin 'jpalardy/vim-slime'
+Plug 'sainnhe/sonokai'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/tmuxline.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'martin-louazel-engineering/vim-tmux-navigator'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-surround'
+Plug 'jpalardy/vim-slime'
 
-Plugin 'pangloss/vim-javascript'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'vim-syntastic/syntastic'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'vim-syntastic/syntastic'
 
-Plugin 'solarnz/thrift.vim'
+Plug 'solarnz/thrift.vim'
 
-call vundle#end()
+call plug#end()
 syntax on
 filetype plugin indent on
 
