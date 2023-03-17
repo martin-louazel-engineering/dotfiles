@@ -230,7 +230,7 @@ set foldlevelstart=99
 
 " C++ related
 " Find all class members in cpp file and open in quickfix window
-nnoremap <leader>m :vimgrep /\v^(\w+\*?\s+)?\w+::\w+\(.*\)/ % \| copen<CR>
+autocmd FileType cpp nnoremap <leader>m :vimgrep /\v^(\w+\*?\s+)?\w+::\w+\(.*\)/ % \| copen<CR>
 " vim-cpp-enhanced-highlight
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
