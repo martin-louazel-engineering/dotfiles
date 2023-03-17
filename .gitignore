@@ -8,7 +8,7 @@
 !.tmux.conf
 !.vimrc
 !.vim/
-.vim/bundle
+.vim/plugged
 .vim/.*
 !install.sh
 !.zshrc
