@@ -200,9 +200,10 @@ command! -bang -nargs=* Rg
   \   fzf#vim#with_preview(), <bang>0)
 command! -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | rightb cw | redraw!
 autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
-nnoremap <leader>gg :Rg<CR>
+nnoremap <leader>gg :Ggr <cword><CR>
+nnoremap <leader>rg :Rg<CR>
 nnoremap <leader>[ :Rg <C-R><C-W><CR>
-vnoremap <leader>[ y:Ggr '<C-R>=escape(@",'/\')<CR>'<CR>
+vnoremap <leader>[ y:Rg <C-R>=escape(@",'/\')<CR><CR>
 
 " Commenting
 map <leader>/ :s/^/\/\/ / <bar> noh<CR>
