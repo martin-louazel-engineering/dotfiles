@@ -202,6 +202,7 @@ command! -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | rightb cw | redraw!
 autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
 nnoremap <leader>gg :Rg<CR>
 nnoremap <leader>[ :Rg <C-R><C-W><CR>
+vnoremap <leader>[ y:Ggr '<C-R>=escape(@",'/\')<CR>'<CR>
 
 " Commenting
 map <leader>/ :s/^/\/\/ / <bar> noh<CR>
@@ -217,7 +218,6 @@ set foldlevelstart=99
 autocmd FileType cpp nnoremap <leader>m :vimgrep /\v^(\w+\*?\s+)?\w+::\w+\(.*\)/ % \| copen<CR>
 
 " Visual Mode start searching
-vnoremap <leader>[ y:Ggr '<C-R>=escape(@",'/\')<CR>'<CR>
 function! VSetSearch()
   let temp = @@
   norm! gvy
