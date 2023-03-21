@@ -217,17 +217,19 @@ set foldlevelstart=99
 autocmd FileType cpp nnoremap <leader>m :vimgrep /\v^(\w+\*?\s+)?\w+::\w+\(.*\)/ % \| copen<CR>
 
 " Visual Mode start searching
-vnoremap <silent> * :<C-U>
-  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
-  \gvy/<C-R>=&ic?'\c':'\C'<CR><C-R><C-R>=substitute(
-  \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
-  \gVzv:call setreg('"', old_reg, old_regtype)<CR>
-vnoremap <silent> # :<C-U>
-  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
-  \gvy?<C-R>=&ic?'\c':'\C'<CR><C-R><C-R>=substitute(
-  \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
-  \gVzv:call setreg('"', old_reg, old_regtype)<CR>
 vnoremap <leader>[ y:Ggr '<C-R>=escape(@",'/\')<CR>'<CR>
+function! VSetSearch()
+  let temp = @@
+  norm! gvy
+  let @/ = '\V' . substitute(escape(@@, '\'), '\n', '\\n', 'g')
+  " Use this line instead of the above to match matches spanning across lines
+  "let @/ = '\V' . substitute(escape(@@, '\'), '\_s\+', '\\_s\\+', 'g')
+  call histadd('/', substitute(@/, '[?/]', '\="\\%d".char2nr(submatch(0))', 'g'))
+  let @@ = temp
+endfunction
+
+vnoremap * :<C-u>call VSetSearch()<CR>/<CR>N
+vnoremap # :<C-u>call VSetSearch()<CR>?<CR>N
 
 " Hex mode
 function! ToggleHex()
