@@ -45,6 +45,7 @@ autocmd vimenter * highlight EndOfBuffer ctermbg=NONE
 
 set number
 set relativenumber
+set cursorline
 
 " ctags
 command! -nargs=* MakeTags !ctags -R <q-args>
