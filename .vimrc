@@ -192,6 +192,7 @@ set wildmenu
 set wildmode=list:longest,full
 set wildignorecase
 nnoremap <space>f :FZF<CR>
+nnoremap <leader>f :GFiles<CR>
 
 " Git grep
 command! -bang -nargs=* Rg
