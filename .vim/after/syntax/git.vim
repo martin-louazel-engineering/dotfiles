@@ -1,3 +1,4 @@
+syn match gitLgSkip			/^...$/
 syn match gitLgLine			/^[_\*|\/\\ ]\+\(\<\x\{4,40\}\>.*\)\?$/
 syn match gitLgHead			/^[_\*|\/\\ ]\+\(\<\x\{4,40\}\>\( ([^)]\+)\)\? \)\?/ contained containedin=gitLgLine
 syn match gitLgHeadPtr		/HEAD ->/ contained containedin=gitLgRefs
