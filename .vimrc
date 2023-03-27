@@ -1,5 +1,3 @@
-hi VertSplit ctermfg=DarkGrey
-hi VertSplit ctermbg=White
 let $BASH_ENV = "~/.bash_aliases"
 set belloff=all
 set formatoptions-=cro
