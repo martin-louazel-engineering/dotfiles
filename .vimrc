@@ -112,11 +112,7 @@ function! ToggleNetrw()
 endfunction
 nnoremap <leader>e :call ToggleNetrw()<CR>
 
-" Git tree
-autocmd FileType git nnoremap <leader>gc :Git checkout <cword><CR>
-autocmd FileType git nnoremap <leader>gp :Git cherry-pick <cword><CR>
 nnoremap <leader>gb :Git blame<CR>
-command! -nargs=* -complete=customlist,fugitive#Complete GT Git ++curwin --paginate log --decorate --graph --oneline <args>
 nnoremap <leader>gt :GT <cword><CR>
 " Add hyphen to keywords to make it easier to <cword> branch names
 autocmd FileType git setlocal iskeyword+=-
