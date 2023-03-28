@@ -32,6 +32,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'vim-syntastic/syntastic'
 
 Plug 'solarnz/thrift.vim'
+Plug 'martin-louazel-engineering/gittree.vim'
 
 call plug#end()
 syntax on
