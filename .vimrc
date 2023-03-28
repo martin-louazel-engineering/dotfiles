@@ -1,3 +1,4 @@
+set termguicolors
 let $BASH_ENV = "~/.bash_aliases"
 set belloff=all
 set formatoptions-=cro
@@ -39,6 +40,7 @@ syntax on
 filetype plugin indent on
 
 colorscheme sonokai
+set background=dark
 autocmd vimenter * highlight Normal ctermbg=NONE
 autocmd vimenter * highlight EndOfBuffer ctermbg=NONE
 
