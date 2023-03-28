@@ -277,3 +277,18 @@ command! -nargs=1 -complete=highlight Unmatch
     \  for m in filter(getmatches(), { i, v -> l:v.group is? <q-args> })
     \|     call matchdelete(m.id)
     \| endfor
+
+function! UpdateTheme(theme)
+	let l:current=g:colors_name
+	execute "colorscheme" a:theme
+	execute "AirlineTheme" a:theme
+	Tmuxline airline
+	redraw
+	let l:confirm = input("Like the change ? (y/n)")
+	if l:confirm!="y"
+		execute "colorscheme" l:current
+		execute "AirlineTheme" l:current
+		Tmuxline airline
+	endif
+endfunction
+command! -nargs=1 -complete=color ChangeTheme :call UpdateTheme(<q-args>)
