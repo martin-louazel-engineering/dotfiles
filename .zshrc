@@ -82,6 +82,7 @@ plugins=(
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 	command-not-found
+	fzf
 )
 
 source $ZSH/oh-my-zsh.sh
