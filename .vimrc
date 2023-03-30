@@ -201,10 +201,6 @@ nnoremap <leader>rg :Rg<CR>
 nnoremap <leader>[ :Rg <C-R><C-W><CR>
 vnoremap <leader>[ y:Rg <C-R>=escape(@",'/\')<CR><CR>
 
-" Commenting
-map <leader>/ :s/^/\/\/ / <bar> noh<CR>
-map <leader>? :s/^\(\t\)\{-\}\/\/ /\1/ <bar> noh<CR>
-
 " folding
 set foldmethod=indent
 " Avoid folding when opening a file
@@ -213,6 +209,8 @@ set foldlevelstart=99
 " C++ related
 " Find all class members in cpp file and open in quickfix window
 autocmd FileType cpp nnoremap <leader>m :vimgrep /\v^(\w+\*?\s+)?\w+::\w+\(.*\)/ % \| copen<CR>
+autocmd FileType cpp map <leader>/ :s/^/\/\/ / <bar> noh<CR>
+autocmd FileType cpp map <leader>? :s/^\(\t\)\{-\}\/\/ /\1/ <bar> noh<CR>
 
 " Visual Mode start searching
 function! VSetSearch()
