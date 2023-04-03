@@ -14,3 +14,6 @@ let g:syntastic_python_checkers=['python']
 let g:syntastic_python_python_quiet_messages={'!level':'errors'}
 nnoremap ]l :lnext<CR>
 nnoremap [l :lprev<CR>
+
+let g:syntastic_cpp_checkers=['cppcheck']
+let g:syntastic_cpp_check_header = 1
