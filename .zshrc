@@ -125,6 +125,8 @@ alias ll='ls -alhF'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias ff='find | grep'
 
+alias :q='exit'
+
 bindkey "^[[P" history-beginning-search-backward
 bindkey "^[[N" history-beginning-search-forward
 
