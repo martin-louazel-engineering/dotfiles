@@ -93,15 +93,6 @@ function! <SID>InsertTabWrapper(direction)
 	endif
 endfunction
 
-function! CustomNerdTreeToggle()
-	if filereadable(expand('%:p:h'))
-		execute "NERDTreeToggle %:p:h"
-	else
-		execute "NERDTreeToggleVCS"
-	endif
-endfunction
-nnoremap <leader>e :call CustomNerdTreeToggle()<CR>
-
 nnoremap <leader>gb :Git blame<CR>
 nnoremap <leader>gt :GT <cword><CR>
 
