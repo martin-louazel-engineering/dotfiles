@@ -21,6 +21,9 @@ if [ "$yn" = "y" ];then
 	git config --global user.email $email
 fi
 
+# Initialize tpm
+git submodule update --init
+
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
