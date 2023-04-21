@@ -13,6 +13,14 @@ sudo apt install \
 	libx11-dev libxtst-dev python3-docopt python3-xlib python3-pil python3-attr \
 	ueberzug
 
+git config --global core.editor "vim"
+git config --global user.name "Martin Louazel"
+read email -p "Enter git email address:"
+read yn -p "Confirm $email ? (y/n)"
+if [ "$yn" = "y" ];then
+	git config --global user.email $email
+fi
+
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
