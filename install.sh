@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sudo apt install \
+	curl \
 	vim \
 	xterm \
 	tmux \
