@@ -1,4 +1,5 @@
 let NERDTreeWinSize=40
+let NERDTreeShowHidden=1
 
 function! CustomNerdTreeToggle()
 	if filereadable(expand('%'))
