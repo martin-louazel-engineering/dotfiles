@@ -1,7 +1,7 @@
 " Eslint configuration
 let g:syntastic_javascript_checkers=['eslint']
 " Use project-specific version of eslint
-let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
+let g:syntastic_javascript_eslint_exe='[ -f $(npm bin)/eslint ] && $(npm bin)/eslint || eslint'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
