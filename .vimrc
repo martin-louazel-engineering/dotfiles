@@ -48,6 +48,9 @@ set number
 set relativenumber
 set cursorline
 
+" Used for German keyboard
+map ß \
+
 " ctags
 command! -nargs=* MakeTags !ctags -R <q-args>
 " indentation
