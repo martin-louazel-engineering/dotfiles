@@ -125,6 +125,8 @@ alias ll='ls -alhF'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias ff='find | grep'
 
+alias grph='git rev-parse HEAD'
+
 alias :q='exit'
 
 bindkey "^[[P" history-beginning-search-backward
