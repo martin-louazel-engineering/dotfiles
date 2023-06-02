@@ -124,6 +124,7 @@ alias please='sudo !!'
 alias ll='ls -alhF'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias ff='find | grep'
+alias dfh='df -hx squashfs'
 
 alias grph='git rev-parse HEAD'
 
