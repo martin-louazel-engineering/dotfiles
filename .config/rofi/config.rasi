@@ -3,4 +3,7 @@ configuration {
 	kb-remove-to-eol: "";
 	kb-row-up: "Super+k,Control+k,Up,Control+p";
 	kb-row-down: "Super+j,Control+j,Down,Control+n";
+
+	modi: "window,drun,combi";
+	combi-modi: "window,drun";
 }
