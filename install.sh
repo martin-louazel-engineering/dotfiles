@@ -10,6 +10,7 @@ sudo apt install \
 	zsh \
 	fzf \
 	ranger \
+	rofi \
 	libx11-dev libxtst-dev python3-docopt python3-xlib python3-pil python3-attr \
 	ueberzug
 

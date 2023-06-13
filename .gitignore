@@ -19,3 +19,4 @@
 .config/*
 !.config/nvim/
 !.config/ranger/
+!.config/rofi/
