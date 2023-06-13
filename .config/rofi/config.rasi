@@ -8,3 +8,11 @@ configuration {
 	combi-modi: "window,drun";
 }
 @theme "Arc-Dark"
+
+element {
+	children: [ element-icon, element-text ];
+}
+
+element-icon {
+	size: 1.5em;
+}
