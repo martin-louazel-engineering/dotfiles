@@ -7,3 +7,4 @@ configuration {
 	modi: "window,drun,combi";
 	combi-modi: "window,drun";
 }
+@theme "Arc-Dark"
