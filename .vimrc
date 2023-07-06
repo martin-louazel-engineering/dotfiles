@@ -97,6 +97,7 @@ endfunction
 
 nnoremap <leader>gb :Git blame<CR>
 nnoremap <leader>gt :GT <cword><CR>
+nnoremap <leader>ga :GT --all<CR>
 
 let g:gtColumn = 1
 function! GtSearch(increment)
