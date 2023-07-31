@@ -3,6 +3,6 @@ alias gt='git log --graph --oneline --decorate'
 
 gittree() {
 	args="$*"
-	nvim -c "GT $args"
+	vim -c "GT $args"
 }
 . "$HOME/.cargo/env"
