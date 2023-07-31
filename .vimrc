@@ -268,3 +268,5 @@ function! UpdateTheme(theme)
 	endif
 endfunction
 command! -nargs=1 -complete=color ChangeTheme :call UpdateTheme(<q-args>)
+
+nnoremap <leader>jq :%!jq .<CR>
