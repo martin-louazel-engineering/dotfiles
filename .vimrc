@@ -48,8 +48,11 @@ set number
 set relativenumber
 set cursorline
 
-" Used for German keyboard
+" Used for other common keyboard layouts
+"German
 map ß \
+" French
+map à \
 
 " ctags
 command! -nargs=* MakeTags !ctags -R <q-args>
