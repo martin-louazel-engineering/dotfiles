@@ -5,4 +5,3 @@ gittree() {
 	args="$*"
 	vim -c "GT $args"
 }
-. "$HOME/.cargo/env"
