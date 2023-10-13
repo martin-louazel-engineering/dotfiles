@@ -46,7 +46,9 @@ autocmd vimenter * highlight EndOfBuffer guibg=NONE ctermbg=NONE
 
 set number
 set relativenumber
-set cursorline
+autocmd BufEnter * setlocal cursorline
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
 
 " Used for other common keyboard layouts
 "German
