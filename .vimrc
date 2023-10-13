@@ -41,6 +41,8 @@ filetype plugin indent on
 
 colorscheme sonokai
 set background=dark
+hi! link CursorLineNr Keyword
+
 highlight Normal guibg=NONE ctermbg=NONE
 highlight EndOfBuffer guibg=NONE ctermbg=NONE
 
