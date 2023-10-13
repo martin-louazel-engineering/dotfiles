@@ -41,8 +41,8 @@ filetype plugin indent on
 
 colorscheme sonokai
 set background=dark
-autocmd vimenter * highlight Normal guibg=NONE ctermbg=NONE
-autocmd vimenter * highlight EndOfBuffer guibg=NONE ctermbg=NONE
+highlight Normal guibg=NONE ctermbg=NONE
+highlight EndOfBuffer guibg=NONE ctermbg=NONE
 
 set number
 set relativenumber
