@@ -189,6 +189,15 @@ nnoremap <leader>rg :Rg<CR>
 nnoremap <leader>[ :Rg <C-R><C-W><CR>
 vnoremap <leader>[ y:Rg <C-R>=escape(@",'/\')<CR><CR>
 
+" Vim grep
+nnoremap <leader>vg :call VimGrep()<CR>
+function! VimGrep()
+	let l:searchTerm = input("VimGrep: ")
+	if l:searchTerm != ""
+		execute "vimgrep /".l:searchTerm."/g % | copen"
+	endif
+endfunction
+
 " folding
 set foldmethod=indent
 " Avoid folding when opening a file
