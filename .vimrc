@@ -57,6 +57,7 @@ autocmd WinLeave * setlocal nocursorline
 map ß \
 " French
 map à \
+map ²² ``
 
 " ctags
 command! -nargs=* MakeTags !ctags -R <q-args>
