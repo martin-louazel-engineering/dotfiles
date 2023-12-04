@@ -5,3 +5,5 @@ autocmd vimenter * highlight GitGutterChange ctermfg=3 ctermbg=None
 autocmd vimenter * highlight GitGutterDelete ctermfg=1 ctermbg=None
 set signcolumn=yes
 
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
