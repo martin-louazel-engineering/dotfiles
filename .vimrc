@@ -27,6 +27,7 @@ Plug 'martin-louazel-engineering/vim-tmux-navigator'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround'
+Plug 'easymotion/vim-easymotion'
 
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
