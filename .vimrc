@@ -83,7 +83,7 @@ match ExtraWhitespace /\s\+$\| \+\ze\t/
 nnoremap ; :
 
 " command mode mappings
-cnoremap <C-\><C-C> <cword>
+cmap <C-\>c <cword>
 
 " line text object
 xnoremap il g_o^
