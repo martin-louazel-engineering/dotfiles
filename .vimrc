@@ -82,6 +82,9 @@ match ExtraWhitespace /\s\+$\| \+\ze\t/
 " spare the shift keystroke in normal mode
 nnoremap ; :
 
+" command mode mappings
+cnoremap <C-\><C-C> <cword>
+
 " line text object
 xnoremap il g_o^
 onoremap il :normal vil<CR>
