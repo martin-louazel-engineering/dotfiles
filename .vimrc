@@ -36,6 +36,8 @@ Plug 'vim-syntastic/syntastic'
 Plug 'solarnz/thrift.vim'
 Plug 'martin-louazel-engineering/gittree.vim'
 
+Plug 'vimwiki/vimwiki'
+
 call plug#end()
 syntax on
 filetype plugin indent on
