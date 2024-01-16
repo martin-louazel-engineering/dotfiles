@@ -134,3 +134,7 @@ bindkey "^[[P" history-beginning-search-backward
 bindkey "^[[N" history-beginning-search-forward
 
 setopt no_share_history
+
+precmd () {
+	echo -n -e "\a"
+}
