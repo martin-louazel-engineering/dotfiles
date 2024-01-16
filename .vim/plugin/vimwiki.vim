@@ -1,0 +1,1 @@
+nmap glt <Plug>VimwikiToggleListItem
