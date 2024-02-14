@@ -14,8 +14,7 @@ sudo apt install \
 	libx11-dev libxtst-dev python3-docopt python3-xlib python3-pil python3-attr \
 	ueberzug
 
-git config --global core.editor "vim"
-git config --global user.name "Martin Louazel"
+git config --global include.path .config/git/config
 read email -p "Enter git email address:"
 read yn -p "Confirm $email ? (y/n)"
 if [ "$yn" = "y" ];then
