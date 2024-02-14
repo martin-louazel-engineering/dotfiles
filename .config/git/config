@@ -3,3 +3,5 @@
 [core]
 	pager = less -S
 	editor = vim
+[branch]
+	sort = -committerdate
