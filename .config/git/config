@@ -1,0 +1,5 @@
+[user]
+	name = Martin Louazel
+[core]
+	pager = less -S
+	editor = vim
