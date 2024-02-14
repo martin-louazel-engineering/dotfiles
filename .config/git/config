@@ -5,3 +5,5 @@
 	editor = vim
 [branch]
 	sort = -committerdate
+[fetch]
+	writeCommitGraph = true
