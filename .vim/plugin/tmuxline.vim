@@ -1,5 +1,5 @@
 let g:tmuxline_preset = {
-      \'a'    : '#S',
+      \'b'    : '#{tmux_mode_style} #S #[default]',
       \'win'  : '#I #W#F',
       \'cwin' : '#I #W#F',
       \'x'    : ['%R'],
