@@ -11,8 +11,11 @@ sudo apt install \
 	fzf \
 	ranger \
 	rofi \
+	cargo \
 	libx11-dev libxtst-dev python3-docopt python3-xlib python3-pil python3-attr \
 	ueberzug
+
+cargo install zoxide --locked
 
 wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip \
 && cd ~/.local/share/fonts \
