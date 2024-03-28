@@ -120,8 +120,11 @@ eval "$(zoxide init --cmd cd zsh)"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-typeset -g POWERLEVEL9K_VCS_FOREGROUND="#A6E3A1"
 typeset -g POWERLEVEL9K_DIR_FOREGROUND="#87B0F9"
+typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+    dir                       # current directory
+    prompt_char               # prompt symbol
+  )
 
 # Personal
 alias please='sudo !!'
@@ -142,3 +145,4 @@ setopt no_share_history
 precmd () {
 	echo -n -e "\a"
 }
+
