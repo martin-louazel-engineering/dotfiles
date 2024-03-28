@@ -15,6 +15,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 call plug#begin('~/.vim/plugged')
 
+Plug 'catppuccin/vim'
 Plug 'sainnhe/sonokai'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'tpope/vim-fugitive'
@@ -42,7 +43,7 @@ call plug#end()
 syntax on
 filetype plugin indent on
 
-colorscheme sonokai
+colorscheme catppuccin_mocha
 set background=dark
 hi! link CursorLineNr Keyword
 
