@@ -118,6 +118,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+typeset -g POWERLEVEL9K_VCS_FOREGROUND="#A6E3A1"
+typeset -g POWERLEVEL9K_DIR_FOREGROUND="#87B0F9"
 
 # Personal
 alias please='sudo !!'
