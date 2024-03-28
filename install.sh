@@ -14,6 +14,12 @@ sudo apt install \
 	libx11-dev libxtst-dev python3-docopt python3-xlib python3-pil python3-attr \
 	ueberzug
 
+wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip \
+&& cd ~/.local/share/fonts \
+&& unzip JetBrainsMono.zip \
+&& rm JetBrainsMono.zip \
+&& fc-cache -fv
+
 git config --global include.path .config/git/config
 read email -p "Enter git email address:"
 read yn -p "Confirm $email ? (y/n)"
