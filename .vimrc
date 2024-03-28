@@ -79,7 +79,7 @@ vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 " highlight trailing spaces and spaces before a tab
 highlight def link ExtraWhitespace CurSearch
-match ExtraWhitespace /\s\+$\| \+\ze\t/
+match ExtraWhitespace /\s\+$/
 
 " spare the shift keystroke in normal mode
 nnoremap ; :
