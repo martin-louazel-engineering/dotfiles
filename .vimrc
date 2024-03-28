@@ -299,3 +299,10 @@ endfunction
 command! -nargs=1 -complete=color ChangeTheme :call UpdateTheme(<q-args>)
 
 nnoremap <leader>jq :%!jq .<CR>
+
+function! SynGroup()
+    let l:s = synID(line('.'), col('.'), 1)
+    echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
+endfun
+command! SynGroupe :call SynGroup()
+nnoremap <F10> :SynGroup<CR>
