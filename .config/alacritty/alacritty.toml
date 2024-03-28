@@ -1,4 +1,5 @@
 [font]
+normal = { family = "JetBrainsMono Nerd Font", style = "" }
 size = 8.0
 
 [window]
