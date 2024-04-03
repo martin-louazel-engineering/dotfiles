@@ -123,6 +123,7 @@ eval "$(zoxide init --cmd cd zsh)"
 typeset -g POWERLEVEL9K_DIR_FOREGROUND="#87B0F9"
 typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     dir                       # current directory
+    vcs                       # current directory
     prompt_char               # prompt symbol
   )
 
