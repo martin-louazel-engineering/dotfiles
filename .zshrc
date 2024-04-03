@@ -126,6 +126,7 @@ typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     vcs                       # current directory
     prompt_char               # prompt symbol
   )
+typeset -g POWERLEVEL9K_VCS_DISABLED_WORKDIR_PATTERN=''
 
 # Personal
 alias please='sudo !!'
