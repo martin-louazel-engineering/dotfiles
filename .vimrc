@@ -79,7 +79,7 @@ nnoremap <S-Tab> <<_
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 " highlight trailing spaces and spaces before a tab
-highlight ExtraWhitespace guibg=lightred  
+highlight ExtraWhitespace guibg=lightred
 match ExtraWhitespace /\s\+$/
 
 " spare the shift keystroke in normal mode
