@@ -38,6 +38,7 @@ Plug 'solarnz/thrift.vim'
 Plug 'martin-louazel-engineering/gittree.vim'
 
 Plug 'vimwiki/vimwiki'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 syntax on
