@@ -74,6 +74,8 @@ command! -nargs=* MakeTags !ctags -R <q-args>
 set tabstop=4
 set softtabstop=0 noexpandtab
 set shiftwidth=4
+autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
+
 nnoremap <Tab> >>_
 nnoremap <S-Tab> <<_
 "inoremap <S-Tab> <C-D>
