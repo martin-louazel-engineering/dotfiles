@@ -75,6 +75,7 @@ set tabstop=4
 set softtabstop=0 noexpandtab
 set shiftwidth=4
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
+set nofixeol
 
 nnoremap <Tab> >>_
 nnoremap <S-Tab> <<_
