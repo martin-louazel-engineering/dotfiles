@@ -219,6 +219,7 @@ set foldlevelstart=99
 autocmd FileType cpp nnoremap <leader>m :vimgrep /\v^(\w+\*?\s+)?\w+::\w+\(.*\)/ % \| copen<CR>
 autocmd FileType cpp map <leader>/ :s/^/\/\/ / <bar> noh<CR>
 autocmd FileType cpp map <leader>? :s/^\(\t\)\{-\}\/\/ /\1/ <bar> noh<CR>
+autocmd FileType cpp map <leader>tc :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
 " Visual Mode start searching
 function! VSetSearch()
