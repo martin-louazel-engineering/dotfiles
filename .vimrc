@@ -141,12 +141,6 @@ nnoremap [g :call GtSearch(0)<CR>
 set clipboard=unnamedplus
 vmap <C-C> y
 
-" Personal tasks
-nnoremap <silent> <leader>td :s/\[\s\]/\[x\]<CR>:noh<CR>
-nnoremap <silent> <leader>tu :s/\[x\]/\[ \]<CR>:noh<CR>
-nnoremap <silent> <leader>tc o[ ]<space>
-nnoremap <silent> <leader>ts o<tab>[ ]<space>
-
 " Search related
 set ignorecase
 set smartcase
