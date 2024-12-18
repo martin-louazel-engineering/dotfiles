@@ -74,6 +74,7 @@ set tabstop=4
 set softtabstop=0 noexpandtab
 set shiftwidth=4
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
+autocmd Filetype dart setlocal expandtab tabstop=2 shiftwidth=2
 set nofixeol
 
 nnoremap <Tab> >>_
