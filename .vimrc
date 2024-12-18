@@ -69,8 +69,6 @@ map ß \
 map à \
 map ²² ``
 
-" ctags
-command! -nargs=* MakeTags !ctags -R <q-args>
 " indentation
 set tabstop=4
 set softtabstop=0 noexpandtab
