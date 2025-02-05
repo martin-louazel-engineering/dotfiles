@@ -148,3 +148,4 @@ precmd () {
 	echo -n -e "\a"
 }
 
+[[ ! -f ~/.zshrc.local ]] || source ~/.zshrc.local
