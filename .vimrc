@@ -49,10 +49,6 @@ colorscheme catppuccin_mocha
 set background=dark
 hi! link CursorLineNr Keyword
 
-"easy-motion-specific theme
-hi link EasyMotionTarget Title
-hi link EasyMotionShade Comment
-
 highlight Normal guibg=NONE ctermbg=NONE
 highlight EndOfBuffer guibg=NONE ctermbg=NONE
 
