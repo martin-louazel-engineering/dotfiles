@@ -52,6 +52,9 @@ hi! link CursorLineNr Keyword
 highlight Normal guibg=NONE ctermbg=NONE
 highlight EndOfBuffer guibg=NONE ctermbg=NONE
 
+" Remove bg color to not conflict with cursorline. Set color to Orange
+highlight Todo term=bold cterm=bold guifg=#EC883A ctermbg=NONE guibg=NONE
+
 set number
 set relativenumber
 autocmd BufEnter * setlocal cursorline
