@@ -93,6 +93,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+export FZF_DEFAULT_COMMAND='find . -type f'
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 eval "$(zoxide init --cmd cd zsh)"
