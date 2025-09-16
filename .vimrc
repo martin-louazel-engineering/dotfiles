@@ -3,8 +3,8 @@ let $BASH_ENV = "~/.bash_aliases"
 set belloff=all
 set formatoptions-=cro
 set mouse=nv
-if !has('nvim')
-	set ttymouse=xterm2
+if has("mouse_sgr")
+    set ttymouse=sgr
 endif
 set scrolloff=2
 
