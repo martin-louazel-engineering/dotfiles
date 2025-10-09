@@ -137,6 +137,19 @@ alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir
 alias ff='find | grep'
 alias dfh='df -hx squashfs'
 
+pac() {
+	pacman -Ss |
+		paste -d '' - - | # pkg name and desc. on same line
+		sed -E 's@^[^/]+/@@' | # Remove package repo prefix (e.g. 'extra/...')
+		sed -E 's/^(.*\[installed].*)$/\x1b[1;32m\1\x1b[0m/' | # Color installed package in green
+		fzf --ansi --multi \
+			--preview-window=down:60% \
+			--preview 'pacman -Si {1}' \
+			--color "current-hl:red,selected-hl:red,hl:yellow" |
+		cut -d ' ' -f 1 |
+		xargs -ro sudo pacman -S # Feed it to pacman -S
+}
+
 alias grph='git rev-parse HEAD'
 
 alias :q='exit'
