@@ -67,6 +67,7 @@ button:hover {
 #tray,
 #network,
 #mode,
+#custom-power,
 #scratchpad {
   margin-top: 2px;
   margin-bottom: 2px;
@@ -132,6 +133,7 @@ button:hover {
 	border-bottom: 2px solid @mauve;
 }
 
-#tray {
+#tray, #custom-power {
+	color: white;
 	border-bottom: 2px solid white;
 }

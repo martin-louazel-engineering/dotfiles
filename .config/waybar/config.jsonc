@@ -8,7 +8,8 @@
 	  "battery",
 	  "hyprland/language",
 	  "tray",
-	  "clock"
+	  "clock",
+	  "custom/power"
   ],
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
@@ -48,5 +49,9 @@
 	  "format": "{}",
 	  "format-en": "EN",
 	  "format-de": "DE"
+	},
+	"custom/power": {
+		"format": "",
+		"on-click": "rofi -show menu -modi 'menu:rofi-power-menu --choices=shutdown/reboot/logout'"
 	}
 }
