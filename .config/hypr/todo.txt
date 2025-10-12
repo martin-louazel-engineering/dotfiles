@@ -1,3 +1,2 @@
 - Add stop menu
 - pavucontrol floating ?
-- commit everything to git
