@@ -25,6 +25,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'martin-louazel-engineering/vim-tmux-navigator'
+Plug 'jlanzarotta/bufexplorer'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround'
@@ -174,7 +175,6 @@ function! DiffToggle()
 
 " Tabs & buffers
 set switchbuf+=usetab
-nnoremap <leader>b :ls<CR>:b<space>
 nnoremap <F5> :source ~/.vimrc<CR>:bufdo e<CR>
 set noconfirm " disable confirmation dialog
 nnoremap <leader>c :bufdo bd<CR>
