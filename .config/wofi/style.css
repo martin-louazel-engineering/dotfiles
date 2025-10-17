@@ -119,11 +119,6 @@ window {
   background-color: @base;
 }
 
-#entry arrow {
-  border: none;
-  color: @lavender;
-}
-
 /* Selected Entry */
 #entry:selected {
   border: 0.11em solid @lavender;
