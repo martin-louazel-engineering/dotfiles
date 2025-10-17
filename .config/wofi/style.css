@@ -136,3 +136,7 @@ window {
 #entry:drop(active) {
   background-color: @lavender!important;
 }
+
+#img {
+	margin: 5px 10px 5px 5px;
+}
