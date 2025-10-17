@@ -2,3 +2,6 @@ mode=drun,run
 term=alacritty
 allow_images=true
 image_size=40
+key_expand=Right,Left,Ctrl-l,Ctrl-h
+key_up=Up,Ctrl-p,Ctrl-k
+key_down=Down,Ctrl-n,Ctrl-j
