@@ -10,6 +10,19 @@
 	  "clock",
 	  "custom/power"
   ],
+  "hyprland/workspaces": {
+	  "format": "{id}:  {windows} ",
+	  "window-rewrite-default": "•",
+	  "window-rewrite": {
+		  "title<.*youtube.*>": "", // Windows whose titles contain "youtube"
+		  "class<firefox>": "", // Windows whose classes are "firefox"
+		  "alacritty": "", // Windows that contain "alacritty" in either class or title.
+		  "mattermost": "", // alternative:  
+		  "nautilus": "",
+		  "text editor": "",
+		  "evince": ""
+	}
+  },
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
