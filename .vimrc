@@ -49,6 +49,7 @@ filetype plugin indent on
 colorscheme catppuccin_mocha
 set background=dark
 hi! link CursorLineNr Keyword
+hi! link LineNr Comment
 
 highlight Normal guibg=NONE ctermbg=NONE
 highlight EndOfBuffer guibg=NONE ctermbg=NONE
