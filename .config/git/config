@@ -7,3 +7,5 @@
 	sort = -committerdate
 [fetch]
 	writeCommitGraph = true
+[merge]
+conflictStyle = diff3
